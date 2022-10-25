@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root {
   --pick-color: #f2726a;
 }
@@ -12,11 +13,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 .card {
   background: #242628;
   width: 300px;
   height: 400px;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 20px;
+}
+.card__detail {
+  color: var(--pick-color);
 }
 img {
   object-fit: cover;
@@ -29,4 +38,40 @@ img {
   height: 120px;
   border: 4px solid var(--pick-color);
   border-radius: 50%;
+  overflow: hidden;
+  margin: 25px auto;
+  transition: 0.5s;
+}
+.card__social {
+  margin: 25px 0;
+}
+.card__social a {
+  color: white;
+  margin: 25px 10px;
+  transition: 0.5s;
+}
+.card__social a i {
+  font-size: 25px;
+}
+.card__btn {
+  width: 130px;
+  height: 40px;
+  border: 2px solid var(--pick-color);
+  background: transparent;
+  color: white;
+  border-radius: 7px;
+  transition: 0.5s;
+}
+.card__social a:hover {
+  color: var(--pick-color);
+}
+.card__btn.card__btn:hover {
+  background: var(--pick-color);
+}
+.card__img:hover {
+  width: 100%;
+  height: 100%;
+  border-radius: unset;
+  margin: 0px auto;
+  border: none;
 }
